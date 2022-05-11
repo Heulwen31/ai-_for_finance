@@ -1,8 +1,7 @@
-from pyexpat import model
 from django.db import models
 
 # Create your models here.
-class SetimentAnalysis(models.Model):
+class SentimentAnalysis(models.Model):
     review = models.CharField(max_length=500)
-    label = model.CharField(max_length=10)
+    label = models.CharField(max_length=10)
 
