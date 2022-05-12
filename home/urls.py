@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.predictor, name='predictor'),
-    path('result/', views.form_infor, name='form_infor'),
+    path('', views.home, name='home'),
+    path('result/', views.save_commit, name='save_commit'),
 ]

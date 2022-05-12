@@ -1,15 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from joblib import load
 
 from home.models import SentimentAnalysis
 
 # Create your views here.
-
+# load model
 model = load('model\model.joblib')
-def predictor(request):
+
+# home page
+def home(request):
     return render(request, 'main.html')
 
-def form_infor(request):
+
+# save commit to database
+def save_commit(request):
     review = request.GET['review']
     result = model.predict([review])
     if result == 0:
@@ -20,4 +24,4 @@ def form_infor(request):
         result = None
     sentiment = SentimentAnalysis(review=review, label=result)
     sentiment.save()
-    return render(request, 'result.html', {'review': result})
+    return redirect('home')
