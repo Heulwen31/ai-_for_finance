@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="{% static 'home\style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <ul class="header__top__left-list">
+                <li class="header__top__left-item">
+                    <a class="header__top__left-item-link" href="">Về chúng tôi</a>
+                </li>
+                <li class="header__top__left-item">
+                    <a class="header__top__left-item-link" href="">Quan hệ nhà đầu tư</a>
+                </li>
+                <li class="header__top__left-item">
+                    <a class="header__top__left-item-link" href="">Tin tức</a>
+                </li>
+                <li class="header__top__left-item">
+                    <a class="header__top__left-item-link" href="">Tuyển dụng</a>
+                </li>
+            </ul>
+            <div class="box">
+                <form action="/search" method="get"></form>
+                <input class="stext" type="text" placeholder="Từ khóa tìm kiếm">
+                <a class="button" type="submit" href="#"></a>
+                <i class="fa fa-search"></i>
+            </div>
+            <ul class="header__top__right-list">
+                <li class="header__top__right-item">
+                    <a class="header__top__right-item-link" href="">
+                        <span class="icon"><i></i></span>
+                        <span>Yêu thích</span>
+                    </a>
+                </li>
+                <li class="header__top__right-item">
+                    <a class="header__top__right-item-link" href="">
+                        <span class="icon"><i></i></span>
+                        <span>Hỗ trợ</span>
+                    </a>
+                </li>
+                <li class="header__top__right-item">
+                    <a class="header__top__right-item-link" href="">
+                        <span class="icon"><i></i></span>
+                        <span>Chi nhánh & ATM</span>
+                    </a>
+                </li>
+                <li class="header__top__right-item">
+                    <a class="header__top__right-item-link" href="">
+                        <span class="icon"><i></i></span>
+                        <span>VN</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__bottom">
+            <ul class="header__bottom__left-list">
+                <span class="header__bottom__left-item"><img src="{% static 'home\logo.svg' %}" alt=""></span>
+            </ul>
+
+            <ul class="header__bottom__between-list">
+                <li class="header__bottom__between-item">
+                    <a class="header__bottom__between-link header__bottom__between-link--green " href="">
+                        Cá nhân
+                    </a>
+                </li>
+                <li class="header__bottom__between-item">
+                    <a class="header__bottom__between-link" href="">
+                        Hộ kinh doanh
+                    </a>
+                </li>
+                <li class="header__bottom__between-item">
+                    <a class="header__bottom__between-link" href="">
+                        Doanh nghiệp SME
+                    </a>
+                </li>
+                <li class="header__bottom__between-item">
+                    <a class="header__bottom__between-link" href="">
+                        Doanh nghiệp lớn
+                    </a>
+                </li>
+                <li class="header__bottom__between-item">
+                    <a class="header__bottom__between-link" href="">
+                        VPBank Diamond
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__bottom__right-list">
+                <img src="{% static 'home\image\vpbank-neo.png' %}" alt="">
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <img src="{% static 'home\image\section.jpg' %}" alt="">
+    </section>
+
+    <hr>
+
+    <form action="result">
+        Sentence: <input type="text" name="review" placeholder="comment" required> <br>
+        <input type="submit">
+    </form>
+    
+    <footer class="footer">
+        <div class="image">
+            <img src="{% static 'home\logo.svg' %}" alt="">
+        </div>
+        <ul class="logo-list logo-list-1">
+            <li><img src="{% static 'home\image\facebook.png' %}" alt=""></li>
+            <li><img src="{% static 'home\image\youtube.png' %}" alt=""></li>
+            <li><img src="{% static 'home\image\zalo.png' %}" alt=""></li>
+        </ul>
+        <ul class="logo-list logo-list-2">
+            <p>Mobile App</p>
+            <li><img src="{% static 'home\image\app-store.png' %}" alt=""></li>
+            <li><img src="{% static 'home\image\goggle-play.png' %}" alt=""></li>
+        </ul>
+    </footer>
+</body>
+</html>

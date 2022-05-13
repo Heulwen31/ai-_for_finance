@@ -9,7 +9,7 @@ model = load('model\model.joblib')
 
 # home page
 def home(request):
-    return render(request, 'main.html')
+    return render(request, 'home\home.html')
 
 
 # save commit to database
