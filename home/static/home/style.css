@@ -225,3 +225,19 @@ hr{
     cursor: pointer;
     filter: grayscale(0);
 }
+
+
+
+.footer__copyright {
+    background: linear-gradient(90deg,#015aad,#00b74f);
+    padding: 15px 0;
+    font-size: 1.6rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
