@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'home\style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <div class="header__top">
@@ -101,41 +103,115 @@
         <img src="{% static 'home\image\section.jpg' %}" alt="">
     </section>
 
-    
+
     <hr>
 
     <form action="result">
         Sentence: <input type="text" name="review" placeholder="comment" required> <br>
         <input type="submit">
     </form>
-    
-    <footer class="footer">
-        <div class="image">
-            <img src="{% static 'home\logo.svg' %}" alt="">
+
+    <footer>
+        <div class="footer__top">
+            <div class="footer__top-left">
+                <a class="footer__top-left-link" href="#">
+                    <img src="https://www.vpbank.com.vn/-/media/vpbank-latest/6all/icon/lien-he/ico-phone.png?h=60&w=60&la=vi-VN&hash=D366C916A7ECCEB34A617DA7C30FB075"
+                        alt="">
+                    <span class="phone">1900545415</span>
+                </a>
+            </div>
+            <div class="footer__top-between">
+                <a class="footer__top-between-link" href="#">
+                    <img src="https://www.vpbank.com.vn/-/media/vpbank-latest/6all/icon/lien-he/ico-location.png?h=60&w=60&la=vi-VN&hash=7556FE4A0ED7E3ECACDB5A3B59496062"
+                        alt="">
+                    <span class="atm">Chi nhánh và ATM</span>
+                </a>
+            </div>
+            <div class="footer__top-right">
+                <a class="footer__top-right-link" href="#">
+                    <img src="https://www.vpbank.com.vn/-/media/vpbank-latest/6all/icon/lien-he/ico-mail.png?h=60&w=60&la=vi-VN&hash=EAC142EAA2F70BBCF6CBF2184EF6082D"
+                        alt="">
+                    <span class="email">Gửi Email</span>
+                </a>
+            </div>
         </div>
-        <ul class="logo-list logo-list-1">
-            <li><img src="{% static 'home\image\facebook.png' %}" alt=""></li>
-            <li><img src="{% static 'home\image\youtube.png' %}" alt=""></li>
-            <li><img src="{% static 'home\image\zalo.png' %}" alt=""></li>
-        </ul>
-        <ul class="logo-list logo-list-2">
-            <p>Mobile App</p>
-            <li><img src="{% static 'home\image\app-store.png' %}" alt=""></li>
-            <li><img src="{% static 'home\image\goggle-play.png' %}" alt=""></li>
-        </ul>
-        <section class="footer__copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 footer__copyright__left">© 2020 VPBank – Bản quyền đã được bảo hộ</div>
-					<div class="col-md-6 footer__copyright__right">
-						<span>
-                                        <a href="/quy-dinh-bao-mat">Chính sách bảo mật</a>
-                                        <a href="/sitemap">Sitemap</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</section>
+
+        <div class="footer__center1">
+            <ul class="footer__center1-list">
+                <li class="footer__center1-item">
+                    <h3>Thẻ tín dụng</h3>
+                    <a href="#">VPBank MC2</a>
+                    <a href="#">VPBank Step Up</a>
+                    <a href="#">VPBank Lady</a>
+                    <a href="#">VPBank Platinum</a>
+                    <a href="#">VPBank World</a>
+                </li>
+                <li class="footer__center1-item">
+                    <h3>Vay tín chấp</h3>
+                    <a href="#">Vay tín chấp BeautyUP</a>
+                    <a href="#">Vay tín chấp tiêu dùng cá nhân</a>
+                </li>
+                <li class="footer__center1-item">
+                    <h3>Vay thế chấp tài sản</h3>
+                    <a href="#">Vay mua ô tô</a>
+                    <a href="#">Vay mua nhà</a>
+                    <a href="#">Vay kinh doanh</a>
+                </li>
+                <li class="footer__center1-item">
+                    <h3>Tiết kiệm</h3>
+                    <a href="#">Tiết kiệm sinh lời</a>
+                    <a href="#">Tiết kiệm gửi góp Easy Savings</a>
+                </li>
+                <li class="footer__center1-item">
+                    <h3>Các sản phẩm khác</h3>
+                    <a href="#">Tài khoản VP Super</a>
+                    <a href="#">Tài khoản thanh toán</a>
+                    <a href="#">Ngân hàng điện tử</a>
+                    <a href="#">Bảo hiểm</a>
+                </li>
+                <li class="footer__center1-item">
+                    <h3>Có thể bạn cần biết</h3>
+                    <a href="#">Khuyến mại</a>
+                    <a href="#">Biểu mẫu, biểu phí</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Công cụ tiện ích</a>
+                    <a href="#">VPBank World</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__center2">
+            <div class="footer__center2-logo"><img class="image-logo" src="{% static 'home\logo.svg' %}" alt="">
+            </div>
+
+            <div class="footer__center2-address">
+                <h3>Ngân hàng TMCP Việt Nam Thịnh Vượng</h3>
+                <h4>Trụ sở chính: 89 Láng Hạ, Quận Đống Đa, Hà Nội</h4>
+            </div>
+
+            <div class="footer__center2-icon">
+                <a href=""><img class="footer__center2-icon-fb" src="{% static 'home\image\facebook.png' %}" alt=""></a>
+                <a href=""><img class="footer__center2-icon-yt" src="{% static 'home\image\youtube.png' %}" alt=""></a>
+                <a href=""><img class="footer__center2-icon-zalo" src="{% static 'home\image\zalo.png' %}" alt=""></a>
+            </div>
+
+            <div class="footer__center2-app">
+                <h3>VPBANK MOBILE APP</h3>
+                <a class="footer__center2-app-appstore" href=""><img src="{% static 'home\image\app-store.png' %}" alt=""></a>
+                <a class="footer__center2-app-ggplay" href=""><img src="{% static 'home\image\goggle-play.png' %}" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <h3>© 2020 VPBank – Bản quyền đã được bảo hộ</h3>
+            </div>
+            <div class="footer__bottom-right">
+                <a class="footer__bottom-right1" href="">Chính sách bảo mật</a>
+                <a class="footer__bottom-right2" href="">Sitemap</a>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
