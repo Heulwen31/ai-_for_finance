@@ -9,6 +9,9 @@
     <title>Finance</title>
     <link rel="stylesheet" href="{% static 'home\style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://trial.chatcompose.com/static/trial/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">    
+    <script async type="text/javascript" src="https://trial.chatcompose.com/static/trial/all/global/export/js/main.a7059cb5.js?user=trial_Rukitori&lang=VI" user="trial_Rukitori" lang="VI"></script>  
 </head>
 
 <body>
@@ -106,11 +109,6 @@
 
     <hr>
 
-    <form action="result">
-        Sentence: <input type="text" name="review" placeholder="comment" required> <br>
-        <input type="submit">
-    </form>
-
     <footer>
         <div class="footer__top">
             <div class="footer__top-left">
@@ -128,11 +126,9 @@
                 </a>
             </div>
             <div class="footer__top-right">
-                <a class="footer__top-right-link" href="#">
-                    <img src="https://www.vpbank.com.vn/-/media/vpbank-latest/6all/icon/lien-he/ico-mail.png?h=60&w=60&la=vi-VN&hash=EAC142EAA2F70BBCF6CBF2184EF6082D"
-                        alt="">
-                    <span class="email">Gửi Email</span>
-                </a>
+                <img src="https://www.vpbank.com.vn/-/media/vpbank-latest/6all/icon/lien-he/ico-mail.png?h=60&w=60&la=vi-VN&hash=EAC142EAA2F70BBCF6CBF2184EF6082D"
+                    alt="">
+                <span class="email" id="myBtn">Phản hồi</span>
             </div>
         </div>
 
@@ -212,6 +208,36 @@
             </div>
         </div>
     </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <form action="result" class="form-feedback">
+                <img src="{% static 'home/image/feedback.png' %}" alt="">
+                <div class="feedback">
+                    <span class="close">&times;</span>
+                    <input type="text" name="review" placeholder="comment" required class="feedback-press"> <br>
+                    <input type="submit" class="feedback-submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
