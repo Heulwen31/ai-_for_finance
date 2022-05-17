@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="{% static 'home\style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="https://trial.chatcompose.com/static/trial/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">    
-    <script async type="text/javascript" src="https://trial.chatcompose.com/static/trial/all/global/export/js/main.a7059cb5.js?user=trial_Rukitori&lang=VI" user="trial_Rukitori" lang="VI"></script>  
+    <link href="https://trial.chatcompose.com/static/trial/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">
+    <script async type="text/javascript"
+        src="https://trial.chatcompose.com/static/trial/all/global/export/js/main.a7059cb5.js?user=trial_Rukitori&lang=VI"
+        user="trial_Rukitori" lang="VI"></script>
 </head>
 
 <body>
@@ -108,7 +110,7 @@
 
 
     <hr>
-
+    
     <footer>
         <div class="footer__top">
             <div class="footer__top-left">
@@ -193,8 +195,10 @@
 
             <div class="footer__center2-app">
                 <h3>VPBANK MOBILE APP</h3>
-                <a class="footer__center2-app-appstore" href=""><img src="{% static 'home\image\app-store.png' %}" alt=""></a>
-                <a class="footer__center2-app-ggplay" href=""><img src="{% static 'home\image\goggle-play.png' %}" alt=""></a>
+                <a class="footer__center2-app-appstore" href=""><img src="{% static 'home\image\app-store.png' %}"
+                        alt=""></a>
+                <a class="footer__center2-app-ggplay" href=""><img src="{% static 'home\image\goggle-play.png' %}"
+                        alt=""></a>
             </div>
         </div>
 
@@ -221,25 +225,18 @@
             </form>
         </div>
     </div>
-    
-    <!-- chatbot form -->
-    <form action="response">
-        <input type="text" placeholder="Input the question" name="question">
-        <input type="submit">
-    </form>
-    <h1>{{response}}</h1>
 
     <script>
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
         }
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
         }
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }

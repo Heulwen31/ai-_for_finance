@@ -29,7 +29,7 @@ model = load('model\model.joblib')
 conversation = []
 # home page
 def home(request):
-    return render(request, 'home\home.html')
+    return render(request, 'home\home.html', {'response': conversation})
 
 
 # save commit to database
@@ -74,4 +74,4 @@ def response_ans(request):
             conversation.append(inp)
             conversation.append(np.random.choice(i['responses']))
             print(conversation)
-            return render(request, 'home\home.html', {'response': np.random.choice(i['responses'])})
+            return redirect('home')
